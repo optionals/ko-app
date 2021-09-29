@@ -1,0 +1,19 @@
+安装ko
+```
+brew install ko
+```
+
+设置ko
+```
+ export KO_DOCKER_REPO=docker_user
+```
+
+进入代码root
+
+```
+ko publish ./ --base-import-paths
+```
+启动
+```
+docker run docker_user/app main
+```
